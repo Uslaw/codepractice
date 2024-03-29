@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{margin: 25px;}
+    </style>
+</head>
+<body>
+    <img src="Last year.jpg"usemap="#funmap" height="700px"width="600px"> 
+    <img src="workplace.jpg"usemap="#workmap"height="408px"width="612px">
+
+
+    <map name="funmap">
+        <!-- whereby the whole image is clickable does not need coordinates -->
+<area shape="default"href="#default"onclick="myFunction()">
+</map>
+<!-- specific regions are clickable and needs coordinates -->
+<map name="workmap">
+<area shape="rect" coords="226,179,426,353" href="laptop.html" alt="laptop">
+<area shape="circle" coords="453,326,55" href="coffee.html" alt="coffee cup">
+<area shape="rect" coords="93,330,183,349" href="book.html" alt="notebook">
+</map>
+
+</body>
+<script>
+    function myFunction() {
+  alert("You clicked the Image!");
+}
+</script>
+</html>
